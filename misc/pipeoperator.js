@@ -1,0 +1,1 @@
+const pipe = (...fns) => fns.reduce((v, fn) => fn(v));
