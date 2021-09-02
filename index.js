@@ -5,7 +5,11 @@ const uniqueInOrder = require ('./challenges/uniqueInOrder')
 const highAndLow = require('./challenges/highAndLow')
 const dnaStrand = require('./challenges/dnaStrand')
 const toCamelCase = require('./challenges/toCamelCase')
-const persistence = require('./challenges/persistence')
+const persistence = require('./challenges/anagrams')
+const romanNumerals = require('./challenges/romanNumerals')
+const anagrams = require('./challenges/anagrams')
+const countBits = require('./challenges/countBits')
+const stringToBinary = require('./challenges/stringToBinary')
 
 
 // console.log(sketch())
@@ -16,5 +20,7 @@ const persistence = require('./challenges/persistence')
 // console.log(dnaStrand('ATTGC'))
 // console.log(toCamelCase('snake_case_any'))
 // console.log(persistence(123))
-
-
+// console.log(romanNumerals(2020))
+// console.log(anagrams('dcba', ['abdc', 'adbc', 'bcda']))
+// console.log(countBits(8))
+// console.log(stringToBinary('Caren')) 
