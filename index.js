@@ -10,6 +10,7 @@ const romanNumerals = require('./challenges/romanNumerals')
 const anagrams = require('./challenges/anagrams')
 const countBits = require('./challenges/countBits')
 const stringToBinary = require('./challenges/stringToBinary')
+const iqTest = require('./challenges/iqTest')
 
 
 // console.log(sketch())
@@ -24,3 +25,4 @@ const stringToBinary = require('./challenges/stringToBinary')
 // console.log(anagrams('dcba', ['abdc', 'adbc', 'bcda']))
 // console.log(countBits(8))
 // console.log(stringToBinary('Caren')) 
+// console.log(iqTest('2 3 4 6 8 10'))
