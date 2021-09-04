@@ -1,13 +1,22 @@
+/**
+
+  A Narcissistic Number is a number of length n in which the sum of its digits to the power of n is equal to the original number. If this seems confusing, refer to the example below.
+
+  Example: 
+    153, where n = 3 (number of digits in 153)
+    13 + 53 + 33 = 153
+
+ */
 
 function narcNumber (number) {
-  const stringNumber = number.toString()
+  const arr = [...number.toString()]
   let result = 0
-  for (let i = 0; i < stringNumber.length; i++) {
-    const power = Math.pow(Number(stringNumber[i]), stringNumber.length)
+  arr.forEach(element => {
+    const power = Math.pow(Number(element), arr.length)
     result += power
-  }
-  return result === number ? true : false
+  })
 
+  return result === number
 }
 
-module.exports = narcNumber
+console.log(narcNumber(88593477))

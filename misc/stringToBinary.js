@@ -7,5 +7,3 @@ function stringToBinary(str) {
 
   return result 
 }
-
-module.exports = stringToBinary
