@@ -12,14 +12,10 @@
 
 function anagrams(word, words){
   const referenceWord = [...word].sort().join('')
-  let result = []
 
-  words.forEach(element => {
-    const compareWord = [...element].sort().join('')
-    if (referenceWord === compareWord) {
-      result.push(element)
-    }    
-  });
+  const result = words.filter(compareWord => referenceWord === [...compareWord].sort().join(''));
 
   return result
 }
+
+console.log(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
