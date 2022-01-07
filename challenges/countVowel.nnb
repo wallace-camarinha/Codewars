@@ -1,0 +1,62 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "function getCount(str: string) {\r\n  let vowelsCount = 0;\r\n  const index = ['a', 'e', 'i', 'o', 'u'];\r\n  \r\n  const arr = str.split('');\r\n  \r\n  arr.forEach(letter => {\r\n    if (index.includes(letter)) {\r\n      vowelsCount += 1\r\n    }\r\n  });\r\n  \r\n  return vowelsCount;\r\n}\r\n\r\ngetCount('testing')"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[33m1\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "language": "typescript",
+            "source": [
+                "// Most starred solution on Codewars\r\n\r\nfunction getCountWithRegex(str) {\r\n  return (str.match(/[aeiou]/ig)||[]).length;\r\n}\r\n\r\ngetCount('test')\r\n"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[33m3\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

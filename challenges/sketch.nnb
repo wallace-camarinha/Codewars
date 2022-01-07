@@ -1,0 +1,33 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "function fact(n: number): number {\r\n  if(n === 1) return 1;\r\n\r\n  return n * fact(n - 1);\r\n}\r\n\r\nfact(10);"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "\u001b[33m3628800\u001b[39m"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
