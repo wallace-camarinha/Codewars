@@ -1,0 +1,38 @@
+{
+    "cells": [
+        {
+            "language": "typescript",
+            "source": [
+                "function wave(str: string): Array<string>{\r\n  const result: string[] = []\r\n  \r\n  for (let i = 0; i < str.length; i++) {\r\n    const arr = str.toLowerCase().split('');\r\n\r\n    if (arr[i] === ' ') continue;\r\n    \r\n    arr[i] = arr[i].toUpperCase();\r\n    result.push(arr.join(''));\r\n    \r\n  }\r\n  return result;\r\n}\r\nwave('Test')"
+            ],
+            "outputs": [
+                {
+                    "items": [
+                        {
+                            "mime": "application/vnd.code.notebook.stdout",
+                            "value": [
+                                "",
+                                ""
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "items": [
+                        {
+                            "mime": "text/plain",
+                            "value": [
+                                "[",
+                                "  \u001b[32m'Test'\u001b[39m,",
+                                "  \u001b[32m'tEst'\u001b[39m,",
+                                "  \u001b[32m'teSt'\u001b[39m,",
+                                "  \u001b[32m'tesT'\u001b[39m",
+                                "]"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
